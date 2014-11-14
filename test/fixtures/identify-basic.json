@@ -1,0 +1,46 @@
+{
+  "input": {
+    "type": "identify",
+    "userId": "user-id",
+    "traits": {
+      "trait": true,
+      "avatar": "avatar-url",
+      "name": "john doe",
+      "gender": "male",
+      "position": "some-position",
+      "company": "Segment",
+      "positions": ["positions"],
+      "location": "some-location",
+      "industry": "some-industry",
+      "languages": ["english"],
+      "birthday": "1990-01-01",
+      "tags": ["a", "b"],
+      "headline": "some-headline",
+      "account": "some-account"
+    }
+  },
+  "output": {
+    "data": {
+      "distinct_id": "user-id",
+      "properties": {
+        "id": "user-id",
+        "avatar_url": "avatar-url",
+        "avatar": "avatar-url",
+        "account": "some-account",
+        "account_id": "some-account",
+        "trait": true,
+        "birthday": "1990-01-01T00:00:00.000Z",
+        "company": "Segment",
+        "gender": "male",
+        "headline": "some-headline",
+        "industry": "some-industry",
+        "languages": ["english"],
+        "location": "some-location",
+        "name": "john doe",
+        "position": "some-position",
+        "positions": ["positions"],
+        "tags": ["a", "b"]
+      }
+    }
+  }
+}

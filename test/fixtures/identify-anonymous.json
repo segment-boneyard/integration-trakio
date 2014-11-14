@@ -1,0 +1,17 @@
+{
+  "input": {
+    "type": "identify",
+    "anonymousId": "anon-id",
+    "traits": {
+      "trait": true
+    }
+  },
+  "output": {
+    "data": {
+      "distinct_id": "anon-id",
+      "properties": {
+        "trait": true
+      }
+    }
+  }
+}

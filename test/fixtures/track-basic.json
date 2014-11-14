@@ -1,0 +1,21 @@
+{
+  "input": {
+    "type": "track",
+    "userId": "user-id",
+    "event": "my-event",
+    "timestamp": "2014",
+    "properties": {
+      "prop": true
+    }
+  },
+  "output": {
+    "data": {
+      "distinct_id": "user-id",
+      "event": "my-event",
+      "time": "2014-01-01T00:00:00.000Z",
+      "properties": {
+        "prop": true
+      }
+    }
+  }
+}

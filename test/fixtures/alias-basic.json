@@ -1,0 +1,13 @@
+{
+  "input": {
+    "type": "alias",
+    "previousId": "previous-id",
+    "userId": "user-id"
+  },
+  "output": {
+    "data": {
+      "distinct_id": "previous-id",
+      "alias": "user-id"
+    }
+  }
+}
