@@ -1,0 +1,41 @@
+{
+  "input": {
+    "type": "group",
+    "groupId": "company-id",
+    "userId": "user-id",
+    "traits": {
+      "trait": true,
+      "avatar": "avatar-url",
+      "address": "some address",
+      "description": "a description",
+      "email": "email@example.com",
+      "employees": 2,
+      "industry": "some-industry",
+      "name": "company name",
+      "phone": "0123456790",
+      "website": "http://example.com"
+    }
+  },
+  "output": {
+    "data": {
+      "company_id": "company-id",
+      "people_distinct_ids": ["user-id"],
+      "properties": {
+        "id": "company-id",
+        "trait": true,
+        "avatar_url": "avatar-url",
+        "avatar": "avatar-url",
+        "address": "some address",
+        "location": "some address",
+        "description": "a description",
+        "headline": "a description",
+        "email": "email@example.com",
+        "employees": 2,
+        "industry": "some-industry",
+        "name": "company name",
+        "phone": "0123456790",
+        "website": "http://example.com"
+      }
+    }
+  }
+}

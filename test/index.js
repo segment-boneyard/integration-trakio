@@ -65,6 +65,16 @@ describe('trak.io', function(){
         test.maps('alias-basic');
       });
     });
+
+    describe('company', function(){
+      it('should map basic company', function(){
+        test.maps('company-basic');
+      });
+
+      it('should map company with anonymous identity', function(){
+        test.maps('company-anonymous');
+      });
+    });
   });
 
   describe('.track()', function () {
@@ -81,7 +91,7 @@ describe('trak.io', function(){
             time: track.timestamp().toISOString()
           }
         })
-        .expects(200, done);
+        .expects(202, done);
     });
   });
 
@@ -111,12 +121,12 @@ describe('trak.io', function(){
             })
           }
         })
-        .expects(200, done);
+        .expects(202, done);
     });
   });
 
   describe('.alias()', function () {
-    it('should get a good response from the api', function(done){
+    it('should get a good response from the API', function(done){
       var alias = helpers.alias();
       test
         .set(settings)
@@ -127,7 +137,28 @@ describe('trak.io', function(){
             alias: alias.to()
           }
         })
-        .expects(200, done);
+        .expects(202, done);
+    });
+  });
+
+  describe('.group()', function () {
+    it('should get a good response from the API', function(done){
+      var group = helpers.group();
+      test
+        .set(settings)
+        .group(group)
+        .sends({
+          data: {
+            people_distinct_ids: [group.userId()],
+            company_id: group.groupId(),
+            properties: extend(group.traits(), {
+              state: group.proxy('traits.state'),
+              city: group.proxy('traits.city'),
+              plan: group.proxy('traits.plan')
+            })
+          }
+        })
+        .expects(202, done);
     });
   });
 });
