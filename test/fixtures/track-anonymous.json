@@ -9,6 +9,7 @@
     }
   },
   "output": {
+    "source": "segment",
     "data": {
       "distinct_id": "anon-id",
       "event": "my-event",

@@ -84,6 +84,7 @@ describe('trak.io', function(){
         .set(settings)
         .track(track)
         .sends({
+          source: "segment",
           data: {
             distinct_id: track.userId(),
             event: track.event(),
@@ -102,6 +103,7 @@ describe('trak.io', function(){
         .set(settings)
         .identify(identify)
         .sends({
+          source: "segment",
           data: {
             distinct_id: identify.userId(),
             properties: extend(identify.traits(), {
@@ -132,6 +134,7 @@ describe('trak.io', function(){
         .set(settings)
         .alias(alias)
         .sends({
+          source: "segment",
           data: {
             distinct_id: alias.from(),
             alias: alias.to()
@@ -148,6 +151,7 @@ describe('trak.io', function(){
         .set(settings)
         .group(group)
         .sends({
+          source: "segment",
           data: {
             people_distinct_ids: [group.userId()],
             company_id: group.groupId(),

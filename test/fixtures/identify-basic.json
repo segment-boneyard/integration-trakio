@@ -20,6 +20,7 @@
     }
   },
   "output": {
+    "source": "segment",
     "data": {
       "distinct_id": "user-id",
       "properties": {

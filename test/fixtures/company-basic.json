@@ -17,6 +17,7 @@
     }
   },
   "output": {
+    "source": "segment",
     "data": {
       "company_id": "company-id",
       "people_distinct_ids": ["user-id"],
