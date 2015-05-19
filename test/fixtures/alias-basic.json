@@ -5,6 +5,7 @@
     "userId": "user-id"
   },
   "output": {
+    "source": "segment",
     "data": {
       "distinct_id": "previous-id",
       "alias": "user-id"
