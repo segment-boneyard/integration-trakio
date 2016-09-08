@@ -1,12 +1,12 @@
 {
-  "name": "integration-trakio",
+  "name": "integration-trak-io",
   "version": "1.2.0",
   "private": true,
-  "description": "trak.io server-side integration",
+  "description": "Trak.io server-side integration",
   "author": "Segment <friends@segment.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/segmentio/integration-trakio"
+    "url": "https://github.com/segmentio/integration-trak-io"
   },
   "main": "lib/index.js",
   "scripts": {
