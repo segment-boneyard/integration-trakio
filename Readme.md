@@ -1,8 +1,8 @@
-[![Build Status](https://circleci.com/gh/segmentio/integration-trakio/tree/master.png?style=svg)](https://circleci.com/gh/segmentio/integration-trakio/tree/master)
+[![Build Status](https://circleci.com/gh/segmentio/integration-trak-io/tree/master.png?style=svg)](https://circleci.com/gh/segmentio/integration-trak-io/tree/master)
 
-# integration-trakio
+# integration-trak-io
 
-trak.io server-side integration for Segment.
+Trak.io server-side integration for Segment.
 
 
 ## License
